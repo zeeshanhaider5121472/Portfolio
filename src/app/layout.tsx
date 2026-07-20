@@ -1,4 +1,5 @@
 import AnimatedCursorComponent from "@/components/AnimatedCursor";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script"; // Import Next.js Script component
 import "./globals.css";
@@ -6,7 +7,13 @@ import "./locomotive.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+// ✅ Dedicated viewport configuration
+export const viewport: Viewport = {
+  themeColor: "#000000",
+};
+
+// ✅ Cleaned up metadata object
+export const metadata: Metadata = {
   title: "Zeeshan Haider😎",
   description:
     "I am a full stack developer. I love to build things that make a difference.",
@@ -23,8 +30,6 @@ export const metadata = {
     "Zeeshan Haider Full Stack Developer Website",
     "Zeeshan Haider Full Stack Developer Website Portfolio",
   ],
-  themeColor: "#000000",
-  siteUrl: "https://sudhanshur.vercel.app",
   alternates: {
     canonical: "/",
     languages: {
