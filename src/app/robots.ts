@@ -1,12 +1,12 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from "next";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: '/private/',
+      userAgent: "*",
+      allow: "/",
+      disallow: "/private/",
     },
-    sitemap: 'https://sudhanshur.vercel.app/sitemap.xml',
-  }
+    sitemap: "https://portfolio-chi-ten-99843whpll.vercel.app/sitemap.xml",
+  };
 }

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Zeeshan Haider😎",
   description:
     "I am a full stack developer. I love to build things that make a difference.",
-  metadataBase: new URL("https://sudhanshur.vercel.app/"),
+  metadataBase: new URL("https://portfolio-chi-ten-99843whpll.vercel.app/"),
   keywords: [
     "Zeeshan Haider",
     "Zeeshan",

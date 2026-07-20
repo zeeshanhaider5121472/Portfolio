@@ -1,8 +1,6 @@
+import { Oswald } from 'next/font/google'
 import Link from 'next/link'
 import Heading from '../Heading'
-import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
-import { GrMail } from 'react-icons/gr'
-import { Oswald } from 'next/font/google'
 const oswald = Oswald({ subsets: ['latin'] })
 
 const Contact = () => {
@@ -10,11 +8,11 @@ const Contact = () => {
         <div className='w-full'>
             <Heading heading='Connect with me' emoji="👋" desc='Don&apos;t be a stranger.' />
             <div className='flex gap-6 flex-wrap text-lg text-gray-300'>
-                <SocialLink icon={<span>✉️</span>} text="MAIL" link="mailto:sudhanshuranjan2k18@gmail.com" />
-                <SocialLink icon={<span>👾</span>} text="GITHUB" link="https://github.com/SudhansuuRanjan" />
-                <SocialLink icon={<span>💼</span>} text="LINKEDIN" link="https://www.linkedin.com/in/sudhanshu-ranjan-a1779b202/" />
-                <SocialLink icon={<span>🐦</span>} text="TWITTER" link="https://twitter.com/Sudhanss_u" />
-                <SocialLink icon={<span>📸</span>} text="INSTAGRAM" link="https://instagram.com/sudhanss_uu" />
+                <SocialLink icon={<span>✉️</span>} text="MAIL" link="mailto:shani721287@gmail.com" />
+                <SocialLink icon={<span>👾</span>} text="GITHUB" link="https://github.com/zeeshanhaider5121472/" />
+                <SocialLink icon={<span>💼</span>} text="LINKEDIN" link="https://www.linkedin.com/in/zeeshan-haider-80b50a179/" />
+                <SocialLink icon={<span>🐦</span>} text="TWITTER" link="https://twitter.com/" />
+                <SocialLink icon={<span>📸</span>} text="INSTAGRAM" link="https://instagram.com/" />
             </div>
         </div>
     )
