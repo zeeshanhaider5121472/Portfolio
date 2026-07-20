@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import LocomotiveScroll, { InstanceOptions } from "locomotive-scroll";
+import LocomotiveScroll, { ILocomotiveScrollOptions } from "locomotive-scroll";
 
 type useLocomotiveScrollHook = [LocomotiveScroll | null];
 
 type Props = {
   ref: React.RefObject<HTMLElement | null>;
-} & Omit<InstanceOptions, 'el'>;
+} & ILocomotiveScrollOptions;
 
 const useLocomotive = ({ ref, ...options }: Props): useLocomotiveScrollHook => {
   const [locomotiveScrollRef, setRef] = useState<LocomotiveScroll | null>(null);
@@ -14,11 +14,10 @@ const useLocomotive = ({ ref, ...options }: Props): useLocomotiveScrollHook => {
     let scroll: LocomotiveScroll | null = null;
 
     if (ref.current) {
-      import('locomotive-scroll').then((locomotiveModule) => {
+      import("locomotive-scroll").then((locomotiveModule) => {
         const LocomotiveModuleDefault = locomotiveModule.default;
 
         scroll = new LocomotiveModuleDefault({
-          // @ts-ignore
           el: ref.current,
           smooth: true,
           lerp: 0.05,
@@ -31,7 +30,8 @@ const useLocomotive = ({ ref, ...options }: Props): useLocomotiveScrollHook => {
             smooth: true,
             breakpoint: 1024,
           },
-        });
+          ...options,
+        } as unknown as ILocomotiveScrollOptions); // Cast to bypass strict type check for 'el'
 
         setRef(scroll);
       });
