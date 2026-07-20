@@ -1,12 +1,12 @@
 "use client";
 import Footer from "@/components/Footer";
 import About from "@/components/Homepage/About";
-import Blogs from "@/components/Homepage/blogs/Blogs";
 import Contact from "@/components/Homepage/Contact";
 import Hero from "@/components/Homepage/Hero";
 import HireMe from "@/components/Homepage/hireme/HireMe";
 import Project from "@/components/Homepage/projects/Project";
 import Skills from "@/components/Homepage/skills/Skills";
+import Designs from "@/components/Homepage/UI/UX/Designs";
 import NavBar from "@/components/NavBar";
 import React from "react";
 
@@ -18,7 +18,7 @@ export default function Home(): React.JSX.Element {
         <Hero />
         <About />
         <Project />
-        <Blogs />
+        <Designs />
         <Skills />
         <HireMe />
         <Contact />

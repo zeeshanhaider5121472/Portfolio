@@ -1,11 +1,11 @@
 "use client";
 import Footer from "@/components/Footer";
-import BlogCard from "@/components/Homepage/blogs/BlogCard";
+import DesignCard from "@/components/Homepage/UI/UX/DesignCard";
 import NavBar from "@/components/NavBar";
 import React from "react";
 
 export default function Home(): React.JSX.Element {
-  const blogs = [
+  const designs = [
     {
       title: "How to build Shopping Cart using HTML, CSS and Js.",
       image:
@@ -38,18 +38,18 @@ export default function Home(): React.JSX.Element {
             I also write 📝
           </h1>
           <h1 className="font-extrabold lg:text-7xl md:text-6xl h-32 text-5xl bg-clip-text text-transparent bg-gradient-to-l from-pink-600 to-purple-500">
-            Technical Blogs.
+            Beautiful Designs.
           </h1>
         </div>
 
         <div className="flex my-16 flex-wrap items-center justify-evenly gap-6 gap-y-16">
-          {blogs.map((blog, idx) => (
-            <BlogCard
-              title={blog.title}
-              id={blog.id}
-              key={blog.id}
-              image={blog.image}
-              link={blog.link}
+          {designs.map((design, idx) => (
+            <DesignCard
+              title={design.title}
+              id={design.id}
+              key={design.id}
+              image={design.image}
+              link={design.link}
             />
           ))}
         </div>
