@@ -28,6 +28,11 @@ const Hero = () => {
             PROJECTS
           </div>
         </Link>
+        <Link className={oswald.className} target="_blank" href="/ui_ux.pdf">
+          <div className="font-medium text-lg text-gray-300 hover:text-gray-400 border-b transition-all ease-in-out delay-[30ms] border-pink-600 w-[65%] hover:w-full">
+            UI/UX
+          </div>
+        </Link>
       </div>
     </>
   );
