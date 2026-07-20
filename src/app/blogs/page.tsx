@@ -1,6 +1,5 @@
 "use client";
 import Footer from "@/components/Footer";
-import DesignCard from "@/components/Homepage/UI/UX/DesignCard";
 import NavBar from "@/components/NavBar";
 import React from "react";
 
@@ -43,7 +42,7 @@ export default function Home(): React.JSX.Element {
           </h1>
         </div>
 
-        <div className="flex my-16 flex-wrap items-center justify-evenly gap-6 gap-y-16">
+        {/* <div className="flex my-16 flex-wrap items-center justify-evenly gap-6 gap-y-16">
           {designs.map((design, idx) => (
             <DesignCard
               title={design.title}
@@ -53,7 +52,7 @@ export default function Home(): React.JSX.Element {
               link={design.link}
             />
           ))}
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>
