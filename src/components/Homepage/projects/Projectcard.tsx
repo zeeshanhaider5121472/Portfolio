@@ -13,6 +13,7 @@ type projcetProp = {
   link: string;
   github: string;
   readme: string;
+  apk?: string;
 };
 
 const Projectcard = ({
@@ -24,6 +25,7 @@ const Projectcard = ({
   link,
   github,
   readme,
+  apk,
 }: projcetProp) => {
   return (
     <div className="relative bg-[linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));] lg:w-fit md:w-fit w-[100%]  h-[30rem] border border-gray-700 rounded-[3rem] flex items-center lg:p-10 md:p-10 p-6">
@@ -69,6 +71,13 @@ const Projectcard = ({
               DETAILS
             </div>
           </Link>
+          {apk && (
+            <Link target="_blank" className={oswald.className} href={readme}>
+              <div className="font-medium text-lg text-gray-400 border-b transition-all ease-in-out delay-[30ms] border-blue-400 w-[65%] hover:w-full">
+                APK🔽
+              </div>
+            </Link>
+          )}
           <div className="flex gap-3">
             <Link target="_blank" href={link}>
               <div className="font-medium text-lg text-gray-400 transition-all ease-in-out delay-[30ms] hover:text-gray-500 ">

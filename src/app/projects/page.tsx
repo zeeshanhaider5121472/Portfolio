@@ -59,6 +59,18 @@ export const projects = [
   },
   {
     id: "06",
+    title: "EMF Detector",
+    desc: "A tool for detecting electromagnetic fields.",
+    img: "/images/emf-detector.jpg",
+    link: "https://em-fdetector.vercel.app/",
+    //   tags: ["ReactJs", "NodeJs", "Express", "Postgres", "SabPaisa"],
+    tags: [""],
+    github: "https://github.com/zeeshanhaider5121472/EMFdetector",
+    readme: "https://github.com/zeeshanhaider5121472/EMFdetector#readme",
+    apk: "https://github.com/zeeshanhaider5121472/EMFdetector/releases/download/EMF1.1/EMF_Detector.apk",
+  },
+  {
+    id: "07",
     title: "Compressor Troubleshooting",
     desc: "A tool for troubleshooting compressor issues.",
     img: "/images/compressor-troubleshooting.jpg",
@@ -67,6 +79,17 @@ export const projects = [
     tags: [""],
     github: "https://github.com/zeeshanhaider5121472/haiderwebapp",
     readme: "https://github.com/zeeshanhaider5121472/haiderwebapp#readme",
+  },
+  {
+    id: "08",
+    title: "Advanced Todo-list",
+    desc: "A very minimilistic design tool for managing and organizing tasks.",
+    img: "/images/advanced-todo-list.jpg",
+    link: "https://nestjs-todolist.vercel.app/",
+    //   tags: ["ReactJs", "NodeJs", "Express", "Postgres", "SabPaisa"],
+    tags: [""],
+    github: "https://github.com/zeeshanhaider5121472/nestjs-todolist",
+    readme: "https://github.com/zeeshanhaider5121472/nestjs-todolist#readme",
   },
 ];
 export default function Home(): React.JSX.Element {
