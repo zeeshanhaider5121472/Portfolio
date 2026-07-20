@@ -5,10 +5,10 @@ const About = () => {
     <div className="">
       <Heading heading="About me" emoji="🧑🏼‍💻" desc="" />
       <p className="lg:w-[34rem] w-auto text-gray-300">
-        UI/UX Designer and Frontend Developer with almost 4 years of experience
-        designing and developing user-centered web and mobile applications.
-        Strong background in React.js, Next.js, Flutter, UI/UX research,
-        usability testing, and design systems.
+        Full Stack developer and UI/UX designer with almost 4 years of
+        experience designing and developing user-centered web and mobile
+        applications. Strong background in React.js, Next.js, Flutter, UI/UX
+        research, usability testing, and design systems.
       </p>
 
       <p className="lg:w-[34rem] w-auto my-5 text-gray-300">
