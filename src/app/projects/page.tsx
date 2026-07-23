@@ -37,6 +37,17 @@ export const projects = [
   },
   {
     id: "04",
+    title: "AI Resume Maker",
+    desc: "A tool for creating professional resumes using AI matching with Job Description",
+    img: "/images/ai-resume-maker.jpg",
+    link: "resume-maker-woad-zeta.vercel.app",
+    //   tags: ["ReactJs", "NodeJs", "Express", "Postgres", "SabPaisa"],
+    tags: [""],
+    github: "https://github.com/zeeshanhaider5121472/resume_maker",
+    readme: "https://github.com/zeeshanhaider5121472/resume_maker#readme",
+  },
+  {
+    id: "05",
     title: "Ludo Classic",
     desc: "A classic Ludo game built with Next.js and Node.js server",
     img: "/images/ludo-classic1.jpg",
@@ -47,7 +58,7 @@ export const projects = [
     readme: "https://github.com/zeeshanhaider5121472/ludo-game#readme",
   },
   {
-    id: "05",
+    id: "06",
     title: "Quranic_AI",
     desc: "Muslim Companion is an AI-powered app that provides a comprehensive set of tools for Muslims to enhance their spiritual journey.",
     img: "/images/quranic_ai.jpg",
@@ -58,7 +69,7 @@ export const projects = [
     readme: "https://github.com/zeeshanhaider5121472/Quranic_AI#readme",
   },
   {
-    id: "06",
+    id: "07",
     title: "EMF Detector",
     desc: "A tool for detecting electromagnetic fields.",
     img: "/images/emf-detector.jpg",
@@ -70,7 +81,7 @@ export const projects = [
     apk: "https://github.com/zeeshanhaider5121472/EMFdetector/releases/download/EMF1.1/EMF_Detector.apk",
   },
   {
-    id: "07",
+    id: "08",
     title: "Compressor Troubleshooting",
     desc: "A tool for troubleshooting compressor issues.",
     img: "/images/compressor-troubleshooting.jpg",
@@ -81,7 +92,7 @@ export const projects = [
     readme: "https://github.com/zeeshanhaider5121472/haiderwebapp#readme",
   },
   {
-    id: "08",
+    id: "09",
     title: "Advanced Todo-list",
     desc: "A very minimilistic design tool for managing and organizing tasks.",
     img: "/images/advanced-todo-list.jpg",
